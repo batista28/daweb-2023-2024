@@ -25,7 +25,26 @@
             font-size: 2em;
         }
 
-      
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
         footer {
             background-color: #07072e; /* Azul marino */
             color: #ffffff; /* Blanco */
@@ -42,10 +61,26 @@
         <h1>Hola Mundo</h1>
     </header>
 
-   
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-    <footer>
-       pagina creda por antonio jesus batista sanchez
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+
+        <label for="telefono">Número de Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+            <i class="material-icons right">send</i>
+        </button>
+    </form>
+
+    <footer class="page-footer">
+        Página creada por Antonio Jesús Batista Sánchez
     </footer>
 </body>
 </html>
